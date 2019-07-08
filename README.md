@@ -15,3 +15,4 @@
 ## Support and contact details
 {In case of any issues contact me on the contacts section on the site. Feel free to comment!!}
 ### License
+{Please refer to the license file in this project.}
