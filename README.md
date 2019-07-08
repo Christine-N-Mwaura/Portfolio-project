@@ -2,10 +2,11 @@
 #### {my portfolio site}
 #### By **{Christine Njeri}**
 ## Description
-{This application gives a brief description of me and my hobbies also my educational background.
+{This application gives a brief description of me and my hobbies also my educational background.https://christine-n-mwaura.github.io/Portfolio-project/#projects.
  }
 ## Setup/Installation Requirements
 * The links in the projects lead you to previous projects i've done in the past.
+* In order to view the code you require a text editor for example Visual studio code, atom or any other text editor you prefer.
 
 {Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
 ## Known Bugs
