@@ -99,6 +99,126 @@ opacity: .6;
 .fas fa-phone-alt{
   color: #C0C0C0;
 }
+.closebtn{
+  color: grey;
+  text-decoration: none;
+  
+}
+.closebtn:hover{
+  text-decoration: none;
+}
+.sidebar {
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+  background: #312450;
+  font-size: 0.65em;
+
+}
+
+.nav ul {
+  list-style: none;
+}
+.nav  li {
+  position: relative;
+  margin: 3.2em 0;
+}
+.nav a {
+  line-height: 5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.4em;
+  color: rgba(#FFF, 0.35);
+  display: block;
+  transition: all ease-out 300ms;
+}
+.nav .active a {
+  color: white;
+}
+.nav :not(.active)::after {
+  opacity: 0.2;
+}
+.nav :not(.active):hover a {
+  color: rgba(#FFF, 0.75);
+}
+.nav :after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.2em;
+  background: black;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #5e42a6, #b74e91)
+}
+.avatar{
+  background:rgba(0,0,0,0.1);
+  padding:2em 0.5em;
+  text-align:center;
+}
+img{
+  width:100px;
+  border-radius:50%;
+  overflow:hidden;
+  border:4px solid #5e42a6;
+  box-shadow:0 0 0 4px rgba(255,255,255,0.2);
+}
+h2{
+  font-weight:normal;
+  margin-bottom:0;
+  color: white;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.details{
+  position: relative;
+  width: 75%;
+  float: right;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1516387938699-a93567ec168e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+  background-position: cover;
+  background-repeat: no-repeat;
+  opacity: .7 ;
+
+ 
+}
+.overlay {
+  position: relative;
+  margin-left: 72px;
+  color: purple;
+  z-index: 1;
+}
 /* .nav{
   height:50%;
   width:0;
@@ -141,11 +261,7 @@ opacity: .6;
   background-position: 50% 50%;
 }
 
-.overlay {
-  position: relative;
-  margin-left: 72px;
-  color: white;
-}
+
 
 .info-section{
   background-color: red;
