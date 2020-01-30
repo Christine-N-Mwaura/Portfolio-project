@@ -6,54 +6,80 @@
 
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Quicksand&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<!--Animations  -->
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/wickedcss.min.css" rel="stylesheet" type="text/css">
+
 <link href="css/style.css" rel="stylesheet" type="text/css">
   <title>Portfolio</title>
 </head>
 
 <body>
-  <!-- Start of SideBar menu --> 
-  
-<div class="container-fluid"> 
-    <div class="row">
-        <div class="col-sm-2 text-center">
-          <div class="overlay">
-            <img id= "profilepic" src="https://lh3.googleusercontent.com/dfUgZhnqO-e8M3emAolX2z6462mTw_E8TOkdTmbhWzRoouOmx-DnOrCiVPBLFzVv3OvmYBd8FlM2gZsoIZ7ORk55vzrHg8zAwVE6nlWYsM6jjxCTviCP_NSbv91O8suDnoFr0zwQX_XTFyf38X08V5fkIePubrKrb64sp058fwNebonqrVonxwLmN9uRzEIUFtykmZYLstoEg75O3E15ocATQpM8O7PdGb6men8llNry5vryfvdAUKdpkKAq0LAFvTb9HbEpUzsVmH1GjVm0-1J7kj-PSxj6vcnIQG1aKQaRuFX9kHjIHs1upFJPIFcintAdKIv-OcbvoBUtNDfzu4in353Bdu1GMN0-EN5-cqR5ecgi_zDvnMIAnSn1i4jAvfJJvNsUrogKK3HP1R-ZSJTBqQfjqtuXGTLYPsLOl4n80lfcU7LHVWJVtCADCBaPkfX7XvZMpZIIdwlp9GUuztcBYqHaSBmq6hlWGjaZAJmeaOaNO0i0rJudit7Ap2f9sIA05FB5xkJwFPrh2OsFK3g15fLnPkaOHgsygXiv-rgd57tL6IJq5Qb2rq4s9Qjf53E0VfnR80Dh8rVtLhPwqZn-BP1_myaVkzO5AwmMR0euWZrskZHxP_592iATybC3JJmFe7vFVilvt98-zoKNBQQbj-_vrG5KOi-a4KjqSp3POtZj8M2h30s=s220-no" alt="" srcset="">
-            <p>Christine Mwaura</p>
-            <p>Android developer/Software Designer</p>
-          </div>
-          
-            <nav class="nav-sidebar">
-                <ul class="nav">
-                    <li class="active"><a href="javascript:;">Home</a></li>
-                    <li><a href="javascript:;">About</a></li>
-                    <li><a href="javascript:;">Skills</a></li>
-                    <li><a href="javascript:;">Projects</a></li>
-                    <li><a href="javascript:;">Contact</a></li>
-                </ul>
-            </nav>
-            <p>© Copyright ©2020 All rights reserved </p> 
  
-        </div>
-        <div class="col-sm-10 SideBar">
-        <nav class="nav-sidebar pull-right">
-          <div>
-            <h1 class="welcome-txt">Hi!<br>
-              I'm Christine</h1>
-              <button type="button" class="btn btn-link "> 
-                <i class="fas fa-phone-alt"></i>
-                CONTACT ME</button>
-          </div>
-
-            </nav>
-        </div>
+ 
+  <main class="main">
+ <!-- Start of SideBar menu --> 
+    <aside class="sidebar">
+     
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <nav class="nav">
+        <header class="avatar">
+          <img src="https://lh3.googleusercontent.com/dfUgZhnqO-e8M3emAolX2z6462mTw_E8TOkdTmbhWzRoouOmx-DnOrCiVPBLFzVv3OvmYBd8FlM2gZsoIZ7ORk55vzrHg8zAwVE6nlWYsM6jjxCTviCP_NSbv91O8suDnoFr0zwQX_XTFyf38X08V5fkIePubrKrb64sp058fwNebonqrVonxwLmN9uRzEIUFtykmZYLstoEg75O3E15ocATQpM8O7PdGb6men8llNry5vryfvdAUKdpkKAq0LAFvTb9HbEpUzsVmH1GjVm0-1J7kj-PSxj6vcnIQG1aKQaRuFX9kHjIHs1upFJPIFcintAdKIv-OcbvoBUtNDfzu4in353Bdu1GMN0-EN5-cqR5ecgi_zDvnMIAnSn1i4jAvfJJvNsUrogKK3HP1R-ZSJTBqQfjqtuXGTLYPsLOl4n80lfcU7LHVWJVtCADCBaPkfX7XvZMpZIIdwlp9GUuztcBYqHaSBmq6hlWGjaZAJmeaOaNO0i0rJudit7Ap2f9sIA05FB5xkJwFPrh2OsFK3g15fLnPkaOHgsygXiv-rgd57tL6IJq5Qb2rq4s9Qjf53E0VfnR80Dh8rVtLhPwqZn-BP1_myaVkzO5AwmMR0euWZrskZHxP_592iATybC3JJmFe7vFVilvt98-zoKNBQQbj-_vrG5KOi-a4KjqSp3POtZj8M2h30s=s220-no" alt="" srcset="">
+          <h2>Christine N.</h2><br>
+          <p></p>
+        </header>
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="javascript:;">About</a></li>
+          <li><a href="javascript:;">Skills</a></li>
+          <li><a href="javascript:;">Projects</a></li>
+          <li><a href="javascript:;">Contact</a></li>
+        </ul>
+       
+      </nav>
+      <p>© Copyright ©2020 All rights reserved </p> 
+    </aside>
+<!--End of SideBar Menu  -->
+<!-- Start of Home section -->
+  <section class="details">
+  <div class="container-fluid"> 
+    <div class="slideUp">
+      <h1 class="welcome-txt">Hi!<br>
+        I'm Christine</h1>
+        <button type="button" class="btn btn-link "> 
+          <i class="fas fa-phone-alt"></i>
+          CONTACT ME</button>
     </div>
-</div>
-  <!--End of SideBar Menu  -->
-   <!-- <div id="particles-js"></div> -->
+</div> 
+</section>
+<!-- End of Home section -->
 
+<!-- Start of About Section -->
+<section id="about">
+  <div id="aboutme" class="text-white">
+    <h2>About Me</h2>
+    <p>Christine Njeri is a web development student at Moringa School. Curious to learn more about all variety of web development in the near future.
+        My ultimate aspiration is to create cool websites that a user can understand and still apealing to the eye.
+        Before joining Moringa, I was an intern at Softclans technologies, as a junior developer, having completed my bachelor's degree program in Information Technology at JKUAT.
+        My love and passion for web designing and motivated me to join Moringa so that i can actually create my own websites.
+        When I'm not coding, you'll find me:
+        <ul>
+        <li>Dancing</li>
+        <li>Singing</li>
+        <li>learning new music skills</li>
+        <li>Watching fashion Videos</li>
+        <li>Exploring national parks and museums</li>
+        <li>..or Spending time with my family and friends</li>
+        </ul>
+        </div>
+</section>
+<!-- End of About Section -->
+
+</main>
   <script src="js/particles.js"></script>
   <script src="js/app.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
