@@ -251,7 +251,7 @@ img{
 .aboutme-content{
   padding: 0, 2.5em;
 }
-.about-heading{
+.heading{
   margin-bottom: 15px;
   display: block;
   font-size: 10px;
@@ -260,7 +260,7 @@ img{
   font-weight: 500;
   letter-spacing:5px;
 }
-.about-subheading{
+.subheading{
   font-size: 18px;
   margin-bottom: 4em;
   font-weight: 700;
@@ -286,6 +286,18 @@ img{
 }
 .services-bg2{
   border-bottom: 2px solid #a84cb8;
+}
+.services-bg3{
+  border-bottom: 2px solid #39FF14;
+}
+.services-bg4{
+  border-bottom: 2px solid #ff0000;
+}
+.services-bg5{
+  border-bottom: 2px solid #259797;
+}
+.services-bg6{
+  border-bottom: 2px solid #a4c639;
 }
 
 .services{
@@ -325,6 +337,142 @@ img{
   color: #000;
 }
 /* End About Section styling */
+
+
+/* Start of Skills section */
+
+@media screen and (max-width: 768px) {
+  .skills{
+    padding-top: 5em;
+    padding-bottom: 8em;
+  }
+ 
+}
+
+@media screen and (max-width: 768px) {
+  .narrow-content{
+    padding: 0;
+  }
+}
+.skills .row{
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.skills .row-pt-md{
+  padding-top: 3em;
+}
+
+.services .html-icon{
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  width: 100px;
+  height: 50px;
+  display: table;
+  margin: 0 auto;
+  background: #2c98f0;
+}
+
+.services .html-icon::before{
+  top: -30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 30px;
+  border-color: transparent transparent #2c98f0 transparent;
+}
+
+.services .html-icon:before, .services .html-icon:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  content: '';
+}
+
+.services .html-icon:after{
+  bottom:-30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 50px 0;
+  border-color: #2c98f0 transparent transparent transparent;
+}
+.services .html-icon i {
+  font-size: 30px;
+  color: #fff;
+  z-index: 1;
+  display: table-cell;
+  vertical-align: middle;
+}
+.services .desc h3{
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.services .css-icon{
+  background: #a84cb8;
+}
+.services .css-icon:after{
+  border-color: #a84cb8 transparent transparent transparent;
+}
+.services .css-icon::before{
+  border-color: transparent transparent #a84cb8 transparent;
+}
+.services .js-icon{
+  background: #39FF14;
+}
+.services .js-icon:after{
+  border-color: #39FF14 transparent transparent transparent;
+}
+.services .js-icon::before{
+  border-color: transparent transparent #39FF14 transparent;
+}
+
+.services .js-icon i {
+  font-size: 35px;
+}
+.services .angular-icon{
+  background: #ff0000;
+}
+.services .angular-icon:after{
+  border-color: #ff0000 transparent transparent transparent;
+}
+.services .angular-icon::before{
+  border-color: transparent transparent #ff0000 transparent;
+}
+.services .angular-icon i {
+  font-size: 45px;
+}
+
+.services .java-icon{
+  background: #259797;
+}
+.services .java-icon:after{
+  border-color: #259797 transparent transparent transparent;
+}
+.services .java-icon::before{
+  border-color: transparent transparent #259797 transparent;
+}
+.services .java-icon i {
+  font-size: 45px;
+}
+
+.services .android-icon{
+  background: #a4c639;
+}
+.services .android-icon:after{
+  border-color: #a4c639 transparent transparent transparent;
+}
+.services .android-icon::before{
+  border-color: transparent transparent #a4c639 transparent;
+}
+.services .android-icon i {
+  font-size: 45px;
+}
+
+/* End of Skills section styling  */
 
 
 
