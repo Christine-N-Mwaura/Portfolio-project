@@ -1,3 +1,39 @@
+/* Using Icomoon */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?sdgszk');
+  src:  url('../fonts/icomoon.eot?sdgszk#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?sdgszk') format('truetype'),
+    url('../fonts/icomoon.woff?sdgszk') format('woff'),
+    url('../fonts/icomoon.svg?sdgszk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-minus:before {
+  content: "\ea0b";
+}
+/* Using Icomoon */
+
 *{
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -610,6 +646,21 @@ div{
   body {
       font-size: 16px;
   }
+}
+
+.panel-heading a:after {
+  font-family: "icomoon";
+  content: "\ea0a";
+  position: absolute;
+  right: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  top: 50%;
+  line-height: 1;
+  margin-top: -7px;
+}
+.panel-heading a.collapsed:after {
+  content: "\ea0b";
 }
 /* End of Education section styling */
 
