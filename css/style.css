@@ -387,13 +387,6 @@ img{
 
 /* Start of Skills section */
 
-@media screen and (max-width: 768px) {
-  .skills{
-    padding-top: 5em;
-    padding-bottom: 8em;
-  }
- 
-}
 
 @media screen and (max-width: 768px) {
   .narrow-content{
@@ -676,7 +669,7 @@ div{
 
 
 
-/* Start of experience section */
+/* Start of experience section styling*/
 .experience, .education {
   padding-top: 4em;
   padding-bottom: 9em;
@@ -777,7 +770,130 @@ div{
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-3 {
   background: #f9bf3f;
 }
-/* End of experience section */
+/* End of experience section styling*/
+
+/* Start of Work section styling */
+/* .work .row ::before, .work .row::after{
+  content: "";
+  display: table;
+} */
+.work .row p{
+  margin-bottom: 1.5em;
+}
+.work .row p{
+  margin: 0 0 10px;
+}
+.work-menu span a.active{
+  color: #2c98f0;
+}
+.work-menu span a{
+  color: #000;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+
+@media screen and (max-width: 768px)
+{
+  .row-bottom-padded-sm {
+  padding-bottom: 1em;
+}
+
+}
+
+.work-menu span{
+  margin-left: 10px;
+}
+/* .row-data{
+  content: "";
+  display: table;
+} */
+.project{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 300px;
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px){
+  .project .desc{
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+.project .desc{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+}
+.project .desc .con{
+  padding: 20px;
+  display: block;
+  position: relative;
+  height: 300px;
+}
+.project .desc .con h3{
+  color: rgba(255, 255, 255, 0.5);
+  
+}
+.project .desc .con .icon{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+.project .desc .con .icon span {
+  display: inline;
+  padding-right: 5px;
+}
+.project .desc .con .icon i {
+  font-size: 14px;
+  color: #333333;
+} 
+.project .desc .con .icon span a{
+  color: #333333;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px){
+  .project .desc span {
+    transform: translate3d(0, 0, 0);  
+  }
+}
+@media screen and (max-width: 768px){
+  .project .desc h3 {
+    transform: translate3d(0, 0, 0);
+    color: #000;
+  }
+}
+
+.project .desc h3 {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;  
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+.project .desc span {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+}
+
+
+/* End of work section stying */
+
+
 /* .nav{
   height:50%;
   width:0;
