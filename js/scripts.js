@@ -9,6 +9,7 @@
 //     document.getElementById("main").style.marginLeft= "0";
 //   }
 $(document).ready(function(){
+ 
   $(".one").click(function(){
     $(".panel-body.one").toggle('slow');
     $(".panel-title.one a").toggleClass("collapsed");
@@ -36,4 +37,27 @@ $(document).ready(function(){
     $(".panel-title.five a").toggleClass("collapsed");
     
   });
+  $('.full-height').fullHeight();
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+  });
+
 });
