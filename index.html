@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Playfair+Display|Quicksand|Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Playfair+Display|Quicksand|Raleway&display=swap"
+    rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 
@@ -54,106 +55,36 @@
 
     <div id="portfolio-main">
       <!-- Start of Home section -->
-      <section class="home">
+      <section class="home js-fullheight">
+        <div id="particles-js"> </div> 
+          <div id="overlay">
+           
+        
+           <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text"
+                style="height: 559px;">
+                <div id="desc">
+                  <h1>Hi!
+                    <br>
+                    I'm
+                    <span class="txt-rotate" data-period="1000"
+                      data-rotate='[ "Christine.", "a software developer."," a mobile developer." ]'></span>
 
-        <div id="overlay">
-          <div id="particles-js">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text" style="height: 559px;">
-                    <div id="desc">
-                      <h1>Hi!
-                        <br>
-                        I'm
-                        <span
-                        class="txt-rotate"
-                        data-period="1000"
-                        data-rotate='[ "Christine.", "a software developer."," a mobile developer." ]'></span>
-                       
-                      </h1>
-                      <p>
-                        <a class="btn btn-primary btn-learn">
-                          View CV
-                          <i class="fas fa-eye"></i>
-                        </a>
-                      </p>
-                    </div>
-                  
+                  </h1>
+                  <p>
+                    <a class="btn btn-primary btn-learn">
+                      View CV
+                      <i class="fas fa-eye"></i>
+                    </a>
+                  </p>
                 </div>
               </div>
+            </div>
           </div>
         </div>
-       </div>
-       
-        <!-- <div class="flexslider js-fullheight" style="height: 908px;">
-          <ul class="slides">
-            <li id="slide1" style="background-image: url(./images/server1.jpg);background-size: cover; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;" class="flex-active-slide" data-thumb-alt="">
-              <div class="overlay"></div>
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text" style="height: 559px;">
-                    <div class="slider-text-inner js-fullheight" style="height: 608px;">
-                      <div class="desc">
-                        <h1>Hi!
-                          <br>
-                          I'm Christine
-                        </h1>
-                        <p>
-                          <a class="btn btn-primary btn-learn">
-                            View CV
-                            <i class="fas fa-eye"></i>
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li id="slide2" style="background-image: url(./images/slider4.jpg); width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" data-thumb-alt="" class="">
-              <div class="overlay">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text" style="height: 608px;">>
-                    <div class="slider-text-inner">
-                      <div class="desc text-white">
-                        <h1>
-                          I am
-                          <br>
-                          a Software Developer
-                        </h1>
-                        <p>
-                          <a class="btn btn-primary btn-learn">
-                            Contact Me
-                            <i class="icon-briefcase"></i>
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>  
-
-              </div>
-            </li>
-          </ul>
-          <ol class="flex-control-nav flex-control-paging">
-            <li>
-              <a href="#slide1" class="flex-active">1</a>
-            </li>
-            <li>
-              <a href="#slide2" class>2</a>
-            </li>
-          </ol> -->
-        <!-- <ul class="flex-direction-nav">
-            <li class="flex-nav-prev">
-              <a class="flex-prev" href="#">Previous</a>
-            </li>
-            <li class="flex-nav-next">
-              <a class="flex-next" href="#">Next</a>
-            </li>
-          </ul> -->
-        <!-- </div> -->
+           
+     
       </section>
       <!-- End of Home section -->
 
@@ -709,7 +640,7 @@
               </div>
               <div class="feature feature-sm fadeInLeft ">
                 <div class="contact-icon">
-                  <i class="icon-phone-outline"></i>
+                  <i class="icon-contacts"></i>
                 </div>
                 <div class="contact-text">
                   <p><a href="tel://">+123 456 7890</a></p>
@@ -751,7 +682,7 @@
     <script src="js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="js/fullHeight.js"></script>    
+    <script src="js/fullHeight.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
