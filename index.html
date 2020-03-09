@@ -24,11 +24,77 @@
 </head>
 
 <body>
-  <div>
-
+  <div id="whole-page">
+<div class="container-wrap">
 
     <!-- Start of SideBar menu -->
-    <aside class="sidebar">
+    <a href="#" class="js-nav-toggle nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+      <i></i>
+    </a>
+    <aside id="aside" role="complementary" class="border js-fullheight" style="height: 608px;">
+      <div class="text-center">
+        <div class="author-img"></div>
+        <h1 id="logo"><a href="index.html">Christine Njeri</a></h1>
+        <span class="position">
+          <a href="#">Software/Mobile/Developer</a> in Nairobi
+        </span>
+      </div>
+      <nav id="main-menu" role="navigation" class="navbar">
+        <div id="navbar" class="collapse in" aria-expanded="true" style="">
+          <ul>
+            <li class="active">
+              <a href="#" data-nav-section="home">
+                Home
+              </a>
+            </li>
+            <li class>
+              <a href="#" data-nav-section="about">
+                About
+              </a>
+            </li>
+            <li class>
+              <a href="#" data-nav-section="skills">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#" data-nav-section="education">
+                Education
+              </a>
+            </li>
+            <li>
+              <a href="#" data-nav-section="experience">
+                Experience
+              </a>
+            </li>
+            <li>
+              <a href="#" data-nav-section="work">
+                Work
+              </a>
+            </li>
+            <li>
+              <a href="#" data-nav-section="contact">
+               Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="menu-footer">
+        <p>
+          <small>
+            © 
+            Copyright ©
+            <script type="text/javascript">document.write(new Date().getFullYear());</script>
+            All rights reserved | This portfolio is made in
+            <i class="icon-code" style="font-size: 14px;" aria-hidden="true"></i>
+            by
+            <a href="https://colorlib.com" target="_blank">Christine</a>
+          </small>
+        </p>
+      </div>
+    </aside>
+    <!-- <aside class="sidebar">
 
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <nav class="nav">
@@ -50,7 +116,7 @@
 
       </nav>
       <p>© Copyright ©2020 All rights reserved </p>
-    </aside>
+    </aside> -->
     <!--End of SideBar Menu  -->
 
     <div id="portfolio-main">
@@ -64,7 +130,7 @@
             <div class="row">
               <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text"
                 style="height: 559px;">
-                <div id="desc">
+                <div id="desc" >
                   <h1>Hi!
                     <br>
                     I'm
@@ -175,7 +241,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 text-center slideDown">
+            <div class="col-md-4 text-center animate slideInDown">
               <div class="services services-bg2">
                 <span class="html-icon css-icon">
                   <i class="fab fa-css3-alt"></i>
@@ -676,7 +742,8 @@
       </section>
       <!-- End of Contact section -->
     </div>
-
+</div>
+</div>
     <script src="js/particles.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script>
