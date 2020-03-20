@@ -90,7 +90,7 @@ body{
 
 }
 #portfolio-main {
-  width: calc(100% - 300px);
+  width: calc(100% - 325px);
   float: right;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -149,6 +149,7 @@ aside{
     padding-bottom: 8em;
 }
 .experience, .skills, .education, .work, .about, .services, .contact{
+ 
   padding-top: 4em;
   padding-bottom: 9em;
   clear: both;
@@ -174,6 +175,9 @@ p{
 }
 
 /* Start navbar styling */
+body.offcanvas {
+  overflow-x: hidden;
+}
 .nav-toggle i::before, .nav-toggle i::after {
   content: '';
   width: 30px;
@@ -186,6 +190,9 @@ p{
   transition: 0.2s;
 }
 .nav-toggle i::after {
+  bottom: -7px;
+}
+.nav-toggle i::before {
   bottom: -7px;
 }
 #aside .author-img {
@@ -217,7 +224,7 @@ p{
   display: block;
   text-align: center;
   color: #000;
-  padding-right: .3em;
+  padding-right: .2em;
 }
 #aside .position {
   display: block;
@@ -322,7 +329,103 @@ small a{
   font-size: 12px;
   font-weight: 100;
 }
-
+body.offcanvas .nav-toggle {
+  top: 0;
+  -moz-transform: translateX(300px);
+  -webkit-transform: translateX(300px);
+  -ms-transform: translateX(300px);
+  -o-transform: translateX(300px);
+  transform: translateX(300px);
+}
+.nav-toggle:hover, .nav-toggle:focus, .nav-toggle:active {
+  outline: none;
+  border-bottom: none !important;
+}
+a:hover, a:active, a:focus {
+  color: #2c98f0;
+  outline: none;
+  text-decoration: none !important;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:hover, a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px){
+  .nav-toggle {
+    opacity: 1;
+    visibility: visible;
+}
+}
+.nav-toggle.active i::before {
+  top: 0;
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+  -o-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+.nav-toggle.active i::before, .nav-toggle.active i::after {
+  background: #000;
+}
+.nav-toggle {
+  position: fixed;
+  left: -5px;
+  top: 0px;
+  z-index: 9999;
+  cursor: pointer;
+  opacity: 1;
+  visibility: hidden;
+  padding: 20px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.nav-toggle {
+  cursor: pointer;
+  text-decoration: none;
+}
+a {
+  color: #2c98f0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+a {
+  background-color: transparent;
+}
+.nav-toggle i::before, .colorlib-nav-toggle i::after {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.nav-toggle i {
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  width: 30px;
+  height: 2px;
+  color: #000;
+  font: bold 14px/.4 Helvetica;
+  text-transform: uppercase;
+  text-indent: -55px;
+  background: #000;
+  -webkit-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
 /* End of navbar styling */
 
 
@@ -426,7 +529,6 @@ small a{
   letter-spacing:5px;
 }
 .subheading{
-
   font-size: 18px;
   margin-bottom: 4em;
   font-weight: 700;
@@ -654,6 +756,11 @@ small a{
   background-color: #f5f5f5;
   border-color: #ddd;
 }
+.panel-body {
+  padding: 1.5em;
+  margin-top: 5px;
+  border: 1px solid #e6e6e6 !important;
+}
 .panel-group .panel-heading+.panel-collapse>.panel-body, .panel-group .panel-heading+.panel-collapse>.list-group {
   border-top: 1px solid #ddd;
 }
@@ -724,7 +831,7 @@ div{
     padding-left: 15px;
     padding-right: 15px;
 }
-.collapse.in{
+.collapse.show{
   display: block;
 }
 .collapse{
@@ -930,6 +1037,7 @@ div{
   display: block;
   margin-bottom: 30px;
 }
+
 @media screen and (max-width: 768px){
   .project .desc{
     opacity: 1;

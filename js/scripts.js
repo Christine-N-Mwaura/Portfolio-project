@@ -57,17 +57,17 @@ window.onload = function() {
 
 $(document).ready(function(){
  
-  $(".one").click(function(){
-    $(".panel-body.one").toggle('slow');
-    $(".panel-title.one a").toggleClass("collapsed");
+  // $(".one").click(function(){
+  //   $(".panel-body.one").toggle('slow');
+  //   $(".panel-title.one a").toggleClass("collapsed");
     
-  });
+  // });
 
-  $(".two").click(function(){
-    $(".panel-body.two").toggle('slow');
-    $(".panel-title.two a").toggleClass("collapsed");
+  // $(".two").click(function(){
+  //   $(".panel-body.two").toggle('slow');
+  //   $(".panel-title.two a").toggleClass("collapsed");
     
-  });
+  // });
 
   $(".three").click(function(){
     $(".panel-body.three").toggle('slow');

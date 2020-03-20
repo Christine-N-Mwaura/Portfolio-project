@@ -16,6 +16,7 @@
   <!--Animations  -->
   <link href="css/animate.css" rel="stylesheet" type="text/css">
   <link href="css/wickedcss.min.css" rel="stylesheet" type="text/css">
+  <link href="css/hover-min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
@@ -23,12 +24,12 @@
   <title>Portfolio</title>
 </head>
 
-<body>
+<body class="offcanvas">
   <div id="whole-page">
 <div class="container-wrap">
 
     <!-- Start of SideBar menu -->
-    <a href="#" class="js-nav-toggle nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+    <a href="#" class="js-nav-toggle nav-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
       <i></i>
     </a>
     <aside id="aside" role="complementary" class="border js-fullheight" style="height: 608px;">
@@ -48,32 +49,32 @@
               </a>
             </li>
             <li class>
-              <a href="#" data-nav-section="about">
+              <a href="#about" data-nav-section="about">
                 About
               </a>
             </li>
             <li class>
-              <a href="#" data-nav-section="skills">
+              <a href="#skills" data-nav-section="skills">
                 Skills
               </a>
             </li>
             <li>
-              <a href="#" data-nav-section="education">
+              <a href="#education" data-nav-section="education">
                 Education
               </a>
             </li>
             <li>
-              <a href="#" data-nav-section="experience">
+              <a href="#experience" data-nav-section="experience">
                 Experience
               </a>
             </li>
             <li>
-              <a href="#" data-nav-section="work">
+              <a href="#work" data-nav-section="work">
                 Work
               </a>
             </li>
             <li>
-              <a href="#" data-nav-section="contact">
+              <a href="#contact" data-nav-section="contact">
                Contact
               </a>
             </li>
@@ -114,7 +115,8 @@
 
                   </h1>
                   <p>
-                    <a class="btn btn-primary btn-learn">
+                    <a href="https://drive.google.com/file/d/13PbpWMeEiei6AoJWD2dnaE7x2zqddlRa/view?ths=true" 
+                    target="_blank" class="btn btn-primary btn-learn hvr-grow">
                       View CV
                       <i class="fas fa-eye"></i>
                     </a>
@@ -128,7 +130,7 @@
       <!-- End of Home section -->
 
       <!-- Start of About Section -->
-      <section class="portfolio-about" data-section="about">
+      <section class="portfolio-about" id="about" data-section="about">
         <div class="aboutme-content">
           <div class="row">
             <div class="col-md-12">
@@ -190,7 +192,7 @@
 
 
       <!--Start of Skills section-->
-      <section class="skills" data-section="skills">
+      <section class="skills" id="skills" data-section="skills">
         <div class="narrow-content">
           <div class="row">
             <div class="col-md-6">
@@ -275,7 +277,7 @@
       <!--End of Skills section-->
 
       <!-- Start of Education section -->
-      <section class="education" data-section="education">
+      <section class="education" id="education" data-section="education">
         <div class="narrow-content">
           <div class="row">
             <div class="col-md-6 col-md-offset-3 col-md-pull-3">
@@ -289,64 +291,53 @@
                 <div class="panel-group" id="accordion" role="tablist" multiselectable="true">
                   <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingOne">
-                      <h4 class="panel-title one">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false"
-                          aria-controls="collapseOne" class="">
-                          Bachelor Degree Information Technology
-
-                        </a>
-                      </h4>
-                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-                        aria-labelledby="headingOne" aria-expanded="true" style="">
-                        <div class="panel-body one">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                Consonantia, there live the blind texts. </p>
-                            </div>
-                            <div class="col-md-6">
-                              <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
-                                language ocean.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">Master Degree Graphic Design
+                    </a>
+                    </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">
+                    <div class="row">
+                    <div class="col-md-6">
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                    </div>
+                    <div class="col-md-6">
+                    <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    </div>
+                    </div>
+                    </div>
                     </div>
                   </div>
                   <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingTwo">
-                      <h4 class="panel-title two">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
-                          aria-controls="collapseOne" class="">
-                          Certificate in Android Development
-                        </a>
-                      </h4>
-                      <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel"
-                        aria-labelledby="headingTwo" aria-expanded="false">
-                        <div class="panel-body two">
-                          <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia
-                            and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at
-                            the coast of the Semantics, a large language ocean.</p>
-                          <ul>
-                            <li>Separated they live in Bookmarksgrove right</li>
-                            <li>Separated they live in Bookmarksgrove right</li>
-                          </ul>
-                        </div>
-                      </div>
+                    <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Bachelor Degree of Computer Science
+                    </a>
+                    </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+                    <div class="panel-body">
+                    <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    <ul>
+                    <li>Separated they live in Bookmarksgrove right</li>
+                    <li>Separated they live in Bookmarksgrove right</li>
+                    </ul>
+                    </div>
                     </div>
                   </div>
 
                   <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                      <h4 class="panel-title four">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
-                          aria-controls="collapseOne" class="">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                          aria-controls="collapseThree">
                           Certificate in java Development,MySQL server 2012
                         </a>
                       </h4>
-                      <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel"
-                        aria-labelledby="headingTwo" aria-expanded="false">
-                        <div class="panel-body four">
+                      
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+                        <div class="panel-body">
                           <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia
                             and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at
                             the coast of the Semantics, a large language ocean.</p>
@@ -359,16 +350,16 @@
                     </div>
                   </div>
                   <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                      <h4 class="panel-title five">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
-                          aria-controls="collapseOne" class="">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false"
+                          aria-controls="collapseFour" >
                           High School Secondary Education
                         </a>
                       </h4>
-                      <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel"
-                        aria-labelledby="headingTwo" aria-expanded="false">
-                        <div class="panel-body five">
+                      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                        aria-labelledby="headingFour" aria-expanded="false">
+                        <div class="panel-body">
                           <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia
                             and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at
                             the coast of the Semantics, a large language ocean.</p>
@@ -379,7 +370,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> 
                 </div>
               </div>
             </div>
@@ -388,7 +379,7 @@
       <!-- End of Education section -->
 
       <!-- Start of experience section -->
-      <section class="experience" data-section="experience">
+      <section class="experience"id="experience" data-section="experience">
         <div class="narrow-content">
           <div class="row">
             <div class="col-md-6 col-md-offset-3 col-md-pull-3">
@@ -465,7 +456,7 @@
       <!-- End of experience section -->
 
       <!-- Start of Work section -->
-      <section class="work" data-section="work">
+      <section class="work" id="work" data-section="work">
         <div class="narrow-content">
           <div class="row">
             <div class="col-md-6 col-md-offset-3 col-md-pull-3">
@@ -491,7 +482,7 @@
           </div>
           <div class="row row-data">
             <div class="col-md-6">
-              <div class="project" style="background-image: url(./images/bluetbl.jpg);">
+              <div class="project hvr-shrink" style="background-image: url(./images/bluetbl.jpg);">
                 <div class="desc">
                   <div class="con">
                     <h3>
@@ -522,7 +513,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="project" style="background-image: url(./images/2.jpg);">
+              <div class="project hvr-shrink" style="background-image: url(./images/2.jpg);">
                 <div class="desc">
                   <div class="con">
                     <h3>
@@ -553,7 +544,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="project" style="background-image: url(./images/Remote.jpeg);">
+              <div class="project hvr-shrink" style="background-image: url(./images/Remote.jpeg);">
                 <div class="desc">
                   <div class="con">
                     <h3>
@@ -584,7 +575,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="project" style="background-image: url(./images/appleComp.jpeg);">
+              <div class="project hvr-shrink" style="background-image: url(./images/appleComp.jpeg);">
                 <div class="desc">
                   <div class="con">
                     <h3>
@@ -615,7 +606,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="project" style="background-image: url(./images/food.jpeg);">
+              <div class="project hvr-shrink" style="background-image: url(./images/food.jpeg);">
                 <div class="desc">
                   <div class="con">
                     <h3>
@@ -651,7 +642,7 @@
       <!-- End of Work section -->
 
       <!-- Start of Contact section -->
-      <section class="contact" data-section="contact">
+      <section class="contact" id="contact" data-section="contact">
         <div class="narrow-content">
           <div class="row">
             <div class="col-md-6 col-md-offset-3 col-md-pull-3">
