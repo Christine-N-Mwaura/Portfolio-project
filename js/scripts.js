@@ -320,6 +320,13 @@ window.onload = function () {
 };
 
 $(document).ready(function () {
+  var rellax = new Rellax('.rellax', {
+    center: true
+  });
+  var rellaxNonCentered = new Rellax('.rellax-non-centered', {
+    center: false
+  });
+  
   fullHeight();
   burgerMenu();
   mobileMenuOutsideClick();
@@ -335,6 +342,7 @@ $(document).ready(function () {
   spacelike();
   cookitlike();
   comingSoon();
-  //navigationSection();
+
+  
   
 });

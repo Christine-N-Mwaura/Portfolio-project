@@ -246,7 +246,7 @@ body.offcanvas {
 }
 .nav-toggle {
   position: fixed;
-  left: -5px;
+  left: -1px;
   top: 0px;
   z-index: 9999;
   cursor: pointer;
@@ -269,11 +269,11 @@ body.offcanvas {
   *display: inline;
   width: 30px;
   height: 2px;
-  color: #000;
+  color: #A9A9A9;
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #000;
+  background: #A9A9A9;
   -webkit-transition: all .2s ease-out;
   -o-transition: all .2s ease-out;
   transition: all .2s ease-out;
@@ -282,7 +282,7 @@ body.offcanvas {
   content: '';
   width: 30px;
   height: 2px;
-  background:#000;
+  background:#A9A9A9;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
@@ -318,7 +318,7 @@ body.offcanvas {
   transform: rotateZ(-45deg);
 }
 .nav-toggle.active i::before, .nav-toggle.active i::after {
-  background: #000;
+  background: #A9A9A9;
 }
 .nav-toggle:hover, .nav-toggle:focus, .nav-toggle:active {
   outline: none;
@@ -544,6 +544,7 @@ a {
 /* Start Home section styling */
 .home{
   height: 608px;
+  
 }
 #particles-js {
   position: absolute;
@@ -552,6 +553,7 @@ a {
   background-image: url(../images/slider3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 
 #overlay{
@@ -578,9 +580,7 @@ a {
 #desc h1 {
   font-size: 28px;
 }
-/* #desc {
-  text-align: center;
-} */
+
 #desc{
   margin-bottom: 20px;
     font-size: 60px;
@@ -656,7 +656,7 @@ a {
 
 
 /* About section styling */
-.portfolio-about{
+.about{
   padding-top: 5em;
   padding-bottom: 9em;
   width: 100%;
