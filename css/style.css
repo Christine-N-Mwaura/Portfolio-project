@@ -894,9 +894,11 @@ a {
 .services .android-icon i {
   font-size: 45px;
 }
+.skills .desc h3 {
+  padding-top: 16%;
+}
 
 /* End of Skills section styling  */
-
 
 /* Start of Education section styling */
 .education h2{
