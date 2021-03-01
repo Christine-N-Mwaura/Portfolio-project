@@ -3,7 +3,7 @@
 #### By **{Christine Njeri}**
 ## Description
 
-{This application gives a brief description of me and my hobbies also my educational background.https://christine-n-mwaura.github.io/Portfolio-project/#projects.
+{This application gives a brief description of me and my hobbies also my educational background.https://christine-n-mwaura.github.io/Portfolio-project.
  }
 ## Setup/Installation Requirements
 * The links in the projects lead you to previous projects i've done in the past.
