@@ -560,7 +560,7 @@ a {
     position: absolute;
     width: 100%;
     height:615px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(43, 33, 33, 0.7);
 }
 
 .container-fluid {
@@ -872,6 +872,10 @@ a {
 .services .java-icon{
   background: #259797;
 }
+.services .kotlin-icon{
+  width: 50px;
+  height: 50px;
+}
 .services .java-icon:after{
   border-color: #259797 transparent transparent transparent;
 }
@@ -1163,12 +1167,16 @@ body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 590;
 }
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-1 {
+  background: #39FF14;
+}
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-2 {
   background: #ec5453;
 }
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-3 {
   background: #f9bf3f;
 }
+
 /* End of experience section styling*/
 
 /* Start of Work section styling */
@@ -1186,7 +1194,9 @@ body {
   text-decoration: none;
   transition: 0.5s;
 }
-
+#pelia a,#pelia span{
+color: rgb(119, 106, 106);
+}
 
 @media screen and (max-width: 768px)
 {
@@ -1281,11 +1291,11 @@ body {
   color: rgba(255, 255, 255, 0.7);
   font-size: 13px;
 }
-#share,#pizza-share,#delani-share,#space-share,#cookit-share{
+#share,#pizza-share,#git-share,#space-share,#cookit-share,#tash-share{
   display: none;
   padding-top: 18%;
 }
-#likes,#pizzalikes,#delanilikes,#spacelikes,#cookitlikes{
+#likes,#pizzalikes,#gitlikes,#spacelikes,#cookitlikes,#tasha-likes{
   color: black;
 }
 /* #mob-dev{
