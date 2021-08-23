@@ -233,7 +233,7 @@ var pJS = function(tag_id, params){
 
   pJS.fn.canvasClear = function(){
     pJS.canvas.ctx.clearRect(0, 0, pJS.canvas.w, pJS.canvas.h);
-  };sermons
+  };
 
 
   /* --------- pJS functions - particles ----------- */
